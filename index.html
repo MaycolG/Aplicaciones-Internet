@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reclutamiento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="js/javaS.js">
 </head>
 <body>
-    
+    <header>
+        <nav class="encabezado">
+            <ol>
+                <li> <a href="Inicio"> Inicio</a></li>
+                <li> <a href="Formulario">Formulario</a></li>
+                <li> <a href="Contacto">Contacto</a></li>
+            </ol>
+        </nav>
+        <div>
+            <h1>Formulario de reclutamiento</h1>
+            <h2>Empresa XYZ</h2>
+        </div>
+    </header>
+    <main>
+        <h2>Formulario</h2>
+        <div class="principal">
+            <div>
+                <h3>Ficha del trabajador</h3>
+                <form action="">
+                    <p>
+                        <label> Rut</label>
+                        <input type="text" name="" id="" placeholder="Ingrese su rut sin guion ni dv" >
+                    </p>
+                    <p>
+                        <label> Nombres</label>
+                        <input type="text" name="" id="" placeholder="Ingrese sus nombres">
+                    </p>
+                    <p>
+                        <label> Apellido paterno</label>
+                        <input type="text" name="" id="" placeholder="Ingrese su apellido paterno">
+                    </p>
+                    <p>
+                        <label> Apellido materno</label>
+                        <input type="text" name="" id="" placeholder="Ingrese su apellido materno">
+                    </p>
+                    <p>
+                        <label> Dirección</label>
+                        <input type="text" name="" id="" placeholder="Ingrese su dirección">
+                    </p>
+                    <p>
+                        <label >Comuna</label>
+                        <select name="Comuna" id="">
+                            <option value="Nose">Nose</option>
+                            <option value="N">NNNN</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="number" placeholder="Ingrese su numero de telefono" >
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" placeholder="Ingrese su correo electronico" >
+                    </p>
+                    <p>
+                        <label >Fecha de ingreso</label>
+                        <input type="date"style="cursor: hand;" >
+                    </p>
+                    <p>
+                        <label>Fecha de nacimiento</label>
+                        <input type="date">
+                    </p>
+                    <p>
+                        <label >Salud</label>
+                        <select name="Salud" id="">
+                            <option value="">Nose</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label >Afp</label>
+                        <select name="Afp" id="">
+                            <option value="">Nose</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Talla</label>
+                        <select name="Talla" id="">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Talla calzado</label>
+                        <input type="number" placeholder="Ingrese la talla en norma europea">
+                    </p>
+                    <p>
+                        <label >Banco</label>
+                        <select name="Banco" id="">
+                            <option value="1">Banco estado</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Tipo cuenta</label>
+                        <select name="Tipo cuenta" id="">
+                            <option value="Cuenta vista">Cuenta vista</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Numero de cuenta</label>
+                        <input type="number" placeholder="Ingrese su numero de cuenta">
+                    </p>
+                    <p>
+                        <label>Carga familiar</label>
+                        <input type="number" placeholder="Ingrese el numero de cargas">
+                    </p>
+                    <p>
+                        <label>Nacionalidad</label>
+                        <select name="nacionalidad" id="">
+                            <option value="chilena">Chilena</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Estado civil</label>
+                        <select name="estado civil" id="">
+                            <option value="soltero/a">Soltero/a</option>
+                            <option value="casado/a">Casado/a</option>
+                            <option value="vuido/a">Viudo/a</option>
+                            <option value="divorciado/a">Divorciado/a</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Genero</label>
+                        <select name="genero" id="">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Certificados</label>
+                        <input type="checkbox" name="" id="Certficado antecedentes" value="1"> <label for="Certficado antecedentes">Certficado antecedentes</label> 
+                        <input type="checkbox" name="" id="Certficado cargas familiares" value="2"> <label for="Certficado cargas familiares">Certficado cargas familiares</label>
+                        <input type="checkbox" name="" id="Certficado afp" value="3"> <label for="Certficado afp">Certficado afp</label>
+                        <input type="checkbox" name="" id="Certficado estudios" value="4"> <label for="Certficado estudios">Certficado estudios</label> 
+                    </p>
+                    <p>
+                        <label>Documentos</label>
+                        <input type="checkbox" name="" id="Copia rut" value="1"> <label for="Certficado antecedentes">Certficado antecedentes</label> 
+                        <input type="checkbox" name="" id="Curriculum vitae" value ="2"> <label for="Certficado cargas familiares">Certficado cargas familiares</label>
+                        <input type="checkbox" name="" id="Carta de recomendación" value="3"> <label for="Certficado afp">Certficado afp</label>
+                        <input type="checkbox" name="" id="Finiquito" value="4"> <label for="Certficado estudios">Certficado estudios</label> 
+                    </p>
+                    <p>
+                        <label>Examenes</label>
+                        <input type="checkbox" name="" id="Covid-19" value="1"> <label for="Certficado antecedentes">Certficado antecedentes</label> 
+                        <input type="checkbox" name="" id="psicologo" value="2"> <label for="Certficado cargas familiares">Certficado cargas familiares</label>
+                        <input type="checkbox" name="" id="Salud general" value="3"> <label for="Certficado afp">Certficado afp</label>
+                        <input type="checkbox" name="" id="Entrevista" value="4"> <label for="Certficado estudios">Certficado estudios</label> 
+                    </p>
+
+                    <p>
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+
+
+
+                    
+
+                </form>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
 </html>
