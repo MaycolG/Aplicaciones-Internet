@@ -6,25 +6,38 @@
     <title>Reclutamiento</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="js/javaS.js">
+
+    <!-- fuente -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="encabezado">
             <ol>
-                <li> <a href="Inicio"> Inicio</a></li>
-                <li> <a href="Formulario">Formulario</a></li>
-                <li> <a href="Contacto">Contacto</a></li>
+                <li> <img src="img/logo.png" class="logo"></li>
+                <li> <a href="#Inicio" class="nav-link"> Inicio</a></li>
+                <li> <a href="#Formulario" class="nav-link">Formulario</a></li>
+                <li> <a href="#Contacto" class="nav-link">Contacto</a></li>
+
+                <ol class="lista-rrss">
+                    <li> <a href="https://www.instagram.com/?hl=es-la" > <img src="img/insta.png" class="logo-rrss"></a></li>
+                    <li> <a href="https://www.facebook.com/" >  <img src="img/facebook.png" class="logo-rrss"></a></li>
+                    <li> <a href="https://www.google.com"  > <img src="img/Google_Chrom.png" class="logo-rrss"> </a></li>
+                </ol> 
+
             </ol>
+
+            
         </nav>
-        <div>
+        <div class="encabezado-imagen">
             <h1>Formulario de reclutamiento</h1>
             <h2>Empresa XYZ</h2>
         </div>
     </header>
     <main>
-        <h2>Formulario</h2>
-        <div class="principal">
-            <div>
+        <h2 id="Formulario">Formulario</h2>
+        <div class="principal" >
+            <div class="div-formulario">
                 <h3>Ficha del trabajador</h3>
                 <form action="">
                     <p>
@@ -172,8 +185,11 @@
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer id="Contacto">
+        <div >
+            <h2 class="encabezado-footer">Empresa XYZ</h2>
+            <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et accusantium aliquid ab dolorem qui, quos dolor quibusdam, quae laborum similique, aperiam nisi! Nostrum qui pariatur vero quia, odit incidunt temporibus?</p>
+        </div>
     </footer>
 
 </body>
