@@ -6,6 +6,7 @@
     <title>Reclutamiento</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="js/javaS.js">
+    <script type="text/javascript" src="js/boot.js"></script>
 
     <!-- fuente -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -107,10 +108,13 @@
             <h3>Para consultar el estado o resultado de su postulación, a continuación ingrese su RUT</h3>
             <div class="contorno">
                 <div>
-                    <input type="text" placeholder="Ingrese su rut" class="input_rut">
+                    <input type="text" class="input_rut" id="txt_rut" placeholder="Ingrese Rut, sin guion ni DV" onkeypress="return solonumeros(event)" onpaste = "return false" >
                 </div>
                 <div>
-                    <button class="btn_postula" >CONSULTAR</button>
+                    <button id="btnvalida" class="btn_postula">CONSULTAR</button>
+                        <p>&nbsp;</p>
+                    <p class="text-info" id="msgerror"></p>
+                    <!-- <button class="btn_postula" >CONSULTAR</button> -->
                 </div>
             </div>
         </section>
