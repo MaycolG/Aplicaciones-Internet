@@ -1,7 +1,6 @@
 *{
-
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif; 
 }
 
 
@@ -22,7 +21,7 @@
     padding-top: 5px;
 }
 
-.lista-rrss img{
+.lista_rrss img{
 
     width: 30px;
     height: 30px;
@@ -37,15 +36,15 @@
     font-size: 25px;
 }
 
-.nav-link{
+.nav_link{
 
     padding: 10px;
 }
 
-.encabezado-imagen{
+.encabezado_imagen{
 
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(168, 237, 233, 0.527) 0%, rgba(254, 214, 227, 0.486) 100%), url(../img/aprendizajes_rrhh.jpg);
+    background-image: linear-gradient(to top, rgba(168, 237, 233, 0.527) 0%, rgba(254, 214, 227, 0.486) 100%), url(../img/arquitectura.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -57,6 +56,11 @@
     align-items: center;
     flex-direction: column;
     font-size: 45px;
+    color:#fff ;
+
+    font-family: 'Krona One', sans-serif;
+    /* -webkit-text-stroke: 1px black; */
+    
 }
 
 .logo{
@@ -67,7 +71,7 @@
     margin-right: 30px;
 }
 
-/* Formulario */
+/* Descripción */
 
 main h2 {
 
@@ -75,44 +79,161 @@ main h2 {
     font-size: 40px;
     padding-top: 30px;
     padding-bottom: 35px;
-    color: rgb(20, 171, 197);;
+    color: rgb(20, 171, 197);
 }
 
-.div-formulario{
+ .descripcion{
 
-    box-shadow: 0 0 20px 0 rgba(11, 54, 172, 0.726);
-    width: 1000px;
-    height: auto;
-    margin-left: 150px;
-    margin-bottom: 40px;
+    display: flex;
+    /* display: grid; */
+    grid-template-columns: 1.5fr 2fr;
+    grid-column-gap: 50px;
+    margin: 50px 220px;
+    /* border: 1px solid black; */
+} 
 
+.mensaje_descrip{
+
+    margin-top: 35px;
+    flex: 40%;
 }
 
-.div-formulario > h3 {
+.mision_vision{
 
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    flex:60%;
+      
 }
 
+.mensaje_descrip img {
 
-.div-formulario form{
+    margin-top: 20px;
+    width: 100%;
+    height: 50%;
+}
+
+.mensaje_descrip h3 {
+
+    font-size: 40px;
+    padding-bottom: 35px;
+    color: rgb(20, 171, 197);
+}
+
+.descripcion p {
+
+    text-align: justify;
+} 
+
+.imagen_mv{
+
+    width: 80%;
+    height: 80%;
+}
+
+ .mision{
+
+    display: flex;
+    grid-column-gap: 25px;
+    margin-bottom: 30px;
+}
+
+.mision_left{
+
+    flex: 60%
+}
+
+.mision_right{
+
+    flex: 40%;
+    /* border: 1px solid black; */
+}
+
+.vision{
+
+    display: flex;
+    grid-column-gap: 25px;
+} 
+
+.vision_left{
+
+    flex: 60%;
+}
+
+.vision_right{
+
+    flex:40%;
+    /* border: 1px solid black; */
+}
+
+/* Trabaja con nosotros */
+
+.postulacion{
+
+    background: rgb(236, 235, 235);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* border: 1px solid black; */
+    
+}
+
+.subtitulo_postulacion{
+
+   text-align: center;
+   margin-bottom: 45px;
+}
+
+.beneficios{
 
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.div-formulario form input, form select , form button, form label{
+.img_postulacion{
 
-    width: 95%;
-    padding: 0.5em;
-    margin-left: 10px;
-}
-
-.div-formulario form input, form select{
-
+    width: 350px;
+    height: 350px;
     margin-bottom: 10px;
 }
+
+.lista_postulacion{
+
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.btn_postula{
+
+    background: rgb(20, 171, 197);
+    padding: 1em;
+    text-transform: uppercase;
+    border-width:3px;
+    border-radius: 12px;
+    color: #ffff;
+    margin: 20px auto 10px auto;
+    padding-bottom: 20px;
+    font-size: 15px;
+    display: block;
+    
+}
+
+/* resultado */
+.resultado h3{
+
+    text-align: center;
+}
+
+.input_rut{
+
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 400px;
+    height: 30px;
+}
+
+
 
 /* footer */
 
@@ -122,15 +243,43 @@ footer{
     color: #fff;
 }
 
-.encabezado-footer {
+.encabezado_footer {
 
-    padding-top: 10px;
+    padding-top: 30px;
     padding-left: 10px;
 }
-
+.lorem h3{
+    margin-left: 100px;
+}
 .lorem{
 
-    padding-top: 10px;
-    padding-left: 10px;
+    /* padding-top: 10px;
+    padding-left: 250px;
     padding-bottom: 30px;
+    margin-right: 30px;    */
+    flex: 33%;
+    /* text-align: justify; */
+    
+}
+.lorem_horarios{
+
+    /* padding-top: 10px;
+    padding-left: 700px;
+    padding-bottom: 50px; */
+    /* margin-bottom: 100px; */
+    flex: 33%;
+}
+.lista-rrss{
+    flex: 33%;
+}
+.logo-rrss{
+
+    width: 35px;
+    height: 35px;
+    margin-top: 4px;
+    margin-right: 30px;
+}
+.foooter{
+    display: flex;
+    padding-top: 40px;
 }
