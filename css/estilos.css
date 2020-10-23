@@ -1,8 +1,6 @@
 *{
-
     margin: 0;
     font-family: 'Quicksand', sans-serif; 
-    
 }
 
 
@@ -23,7 +21,7 @@
     padding-top: 5px;
 }
 
-.lista-rrss img{
+.lista_rrss img{
 
     width: 30px;
     height: 30px;
@@ -38,12 +36,12 @@
     font-size: 25px;
 }
 
-.nav-link{
+.nav_link{
 
     padding: 10px;
 }
 
-.encabezado-imagen{
+.encabezado_imagen{
 
     height: 100vh;
     background-image: linear-gradient(to top, rgba(168, 237, 233, 0.527) 0%, rgba(254, 214, 227, 0.486) 100%), url(../img/arquitectura.png);
@@ -84,7 +82,7 @@ main h2 {
     color: rgb(20, 171, 197);
 }
 
-.Descripcion{
+.descripcion{
 
     display: grid;
     grid-template-columns: 1.5fr 2fr;
@@ -93,31 +91,31 @@ main h2 {
     /* border: 1px solid black; */
 }
 
-.mensaje-descrip{
+.mensaje_descrip{
 
     margin-top: 35px;
 }
 
-.mensaje-descrip img {
+.mensaje_descrip img {
 
     margin-top: 20px;
     width: 690px;
     height: 330px;
 }
 
-.mensaje-descrip h3 {
+.mensaje_descrip h3 {
 
     font-size: 40px;
     padding-bottom: 35px;
     color: rgb(20, 171, 197);
 }
 
-.Descripcion p {
+.descripcion p {
 
     text-align: justify;
 } 
 
-.imagen-mv{
+.imagen_mv{
 
     width: 250px;
     height: 250px;
@@ -154,7 +152,7 @@ main h2 {
     margin-bottom: 15px;
 }
 
-.subtitulo-postulacion{
+.subtitulo_postulacion{
 
    text-align: center;
    margin-bottom: 45px;
@@ -168,21 +166,21 @@ main h2 {
     margin-bottom: 30px;
 }
 
-.img-postulacion{
+.img_postulacion{
 
     width: 350px;
     height: 350px;
     margin-bottom: 10px;
 }
 
-.lista-postulacion{
+.lista_postulacion{
 
     text-align: left;
     margin-top: 10px;
     margin-left: 120px;
 }
 
-.btn-postula{
+.btn_postula{
 
    
     background: rgb(20, 171, 197);
@@ -205,7 +203,7 @@ main h2 {
     text-align: center;
 }
 
-.input-rut{
+.input_rut{
 
     margin-left: 780px;
     text-align: center;
@@ -215,10 +213,6 @@ main h2 {
     height: 30px;
 }
 
-.contorno{
-
-    /* box-shadow: 0 0 20px 0 rgba(11, 54, 172, 0.726); */
-}
 
 
 /* footer */
@@ -229,7 +223,7 @@ footer{
     color: #fff;
 }
 
-.encabezado-footer {
+.encabezado_footer {
 
     padding-top: 10px;
     padding-left: 10px;
