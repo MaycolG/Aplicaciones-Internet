@@ -73,7 +73,13 @@
 
 /* Descripción */
 
-main h2 {
+.descripcion{
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.descripcion h3{
 
     text-align: center;
     font-size: 40px;
@@ -82,86 +88,15 @@ main h2 {
     color: rgb(20, 171, 197);
 }
 
- .descripcion{
-
-    display: flex;
-    /* display: grid; */
-    grid-template-columns: 1.5fr 2fr;
-    grid-column-gap: 50px;
-    margin: 50px 220px;
-    /* border: 1px solid black; */
-} 
-
-.mensaje_descrip{
-
-    margin-top: 35px;
-    flex: 40%;
-}
-
-.mision_vision{
-
-    flex:60%;
-      
-}
-
-.mensaje_descrip img {
-
-    margin-top: 20px;
-    width: 100%;
-    height: 50%;
-}
-
-.mensaje_descrip h3 {
-
-    font-size: 40px;
-    padding-bottom: 35px;
-    color: rgb(20, 171, 197);
-}
-
 .descripcion p {
 
     text-align: justify;
-} 
+}
 
 .imagen_mv{
 
-    width: 80%;
-    height: 80%;
-}
+  margin-top: 10%;
 
- .mision{
-
-    display: flex;
-    grid-column-gap: 25px;
-    margin-bottom: 30px;
-}
-
-.mision_left{
-
-    flex: 60%
-}
-
-.mision_right{
-
-    flex: 40%;
-    /* border: 1px solid black; */
-}
-
-.vision{
-
-    display: flex;
-    grid-column-gap: 25px;
-} 
-
-.vision_left{
-
-    flex: 60%;
-}
-
-.vision_right{
-
-    flex:40%;
-    /* border: 1px solid black; */
 }
 
 /* Trabaja con nosotros */
@@ -172,8 +107,7 @@ main h2 {
     padding-top: 40px;
     padding-bottom: 40px;
     /* border: 1px solid black; */
-    
-}
+} 
 
 .subtitulo_postulacion{
 
@@ -181,26 +115,16 @@ main h2 {
    margin-bottom: 45px;
 }
 
-.beneficios{
+.postulacion h2{
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    margin-bottom: 30px;
-}
-
-.img_postulacion{
-
-    width: 350px;
-    height: 350px;
-    margin-bottom: 10px;
+    color: rgb(20, 171, 197);
 }
 
 .lista_postulacion{
 
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 120px;
+    text-align: center;
+    margin-top: 10px; 
 }
 
 .btn_postula{
@@ -218,10 +142,20 @@ main h2 {
     
 }
 
-/* resultado */
-.resultado h3{
+.img_postulacion{
 
-    text-align: center;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+
+/* resultado */
+
+.resultado h2 {
+
+   color: rgb(20, 171, 197);
+   margin-top: 40px;
 }
 
 .input_rut{
@@ -229,9 +163,18 @@ main h2 {
     display: block;
     text-align: center;
     margin: 20px auto;
-    width: 400px;
-    height: 30px;
+    width: 70%;
 }
+
+.contorno{
+
+    box-shadow: 0 0 20px 0 rgba(11, 54, 172, 0.726);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 
 /* footer */
 
@@ -239,6 +182,8 @@ footer{
 
     background: rgb(32, 65, 87);
     color: #fff;
+    padding-top: 20px;
+    padding-bottom: 35px;
 }
 
 .encabezado_footer {
@@ -246,38 +191,27 @@ footer{
     padding-top: 30px;
     padding-left: 10px;
 }
-.lorem h3{
-    margin-left: 100px;
-}
-.lorem{
 
-    /* padding-top: 10px;
-    padding-left: 250px;
-    padding-bottom: 30px;
-    margin-right: 30px;    */
-    flex: 33%;
-    /* text-align: justify; */
-    
-}
-.lorem_horarios{
-
-    /* padding-top: 10px;
-    padding-left: 700px;
-    padding-bottom: 50px; */
-    /* margin-bottom: 100px; */
-    flex: 33%;
-}
-.lista-rrss{
-    flex: 33%;
-}
-.logo-rrss{
+.logo_rrss{
 
     width: 35px;
     height: 35px;
-    margin-top: 4px;
-    margin-right: 30px;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
-.foooter{
-    display: flex;
-    padding-top: 40px;
+.lorem_horarios{
+
+.lista_rrss{
+
+    list-style: none;
 }
+
+
+/* Bootstrap */
+
+.container{
+
+    text-align: center;
+}
+
+

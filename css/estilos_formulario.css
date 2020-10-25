@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/* Header */
+
+.encabezado{
+
+    background: rgb(20, 171, 197);
+    width: auto;
+    height: 45px;
+}
+
+.encabezado ol{
+
+    list-style: none;
+    display: flex;  
+    flex-direction: row; 
+    padding-top: 5px;
+}
+
+
+.encabezado a{
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav_link{
+
+    padding: 10px;
+}
+
+.logo{
+
+    width: 35px;
+    height: 30px;
+    margin-top: 4px;
+    margin-right: 30px;
+}
+
+
+/* Formulario datos personales */
+
+.titulo{
+
+    margin-top: 15px;
+}
+
+/* footer */
+
+footer{
+
+    background: rgb(32, 65, 87);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.encabezado_footer {
+
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.logo_rrss{
+
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.lista_rrss{
+
+    list-style: none;
+}
+
+.btn_siguiente{
+
+    background: rgb(20, 171, 197);
+    padding: 0.5em;
+    text-transform: uppercase;
+    border-width:3px;
+    border-radius: 12px;
+    color: #ffff;
+    margin: 20px auto 10px auto;
+    padding-bottom: 10px;
+    font-size: 15px;
+    display: block;
+    
+}
+
+.img_form{
+
+    margin-top: center;
+}
