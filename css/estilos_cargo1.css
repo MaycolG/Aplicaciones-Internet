@@ -52,6 +52,21 @@
     padding-right: 10px;
 }
 
+.btn_siguiente{
+
+    background: rgb(20, 171, 197);
+    padding: 0.5em;
+    text-transform: uppercase;
+    border-width:3px;
+    border-radius: 12px;
+    color: #ffff;
+    margin: 20px auto 10px auto;
+    padding-bottom: 10px;
+    font-size: 15px;
+    display: block;
+    
+}
+
 
 
 
