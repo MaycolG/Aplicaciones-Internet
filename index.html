@@ -19,8 +19,8 @@
         <nav class="encabezado">
             <ol>
                 <li> <img src="img/logo.png" class="logo"></li>
-                <li> <a href="#Inicio" class="nav_link"> Inicio</a></li>
-                <li> <a href="#Descripcion" class="nav_link">Descripción</a></li>
+                <li> <a href="#encabezado_imagen" class="nav_link"> Inicio</a></li>
+                <li> <a href="#container descripcion" class="nav_link">Descripción</a></li>
                 <li> <a href="#postulacion" class="nav_link">Trabaja con nostros</a></li>
                 <li> <a href="#resultado" class="nav_link">Resultado</a></li>
                 <li> <a href="#Contacto" class="nav_link">Contacto</a></li>
@@ -132,7 +132,8 @@
                         <h3>Para consultar el estado o resultado de su postulación, a continuación ingrese su RUT</h3>
                         <div class="contorno">
                             <div>
-                                <input type="text" class="input_rut" id="txt_rut" placeholder="Ingrese Rut, sin guion ni DV" onkeypress="return solonumeros(event)" onpaste = "return false" >
+                                <input type="text" class="input_rut" required id="txt_rut" placeholder="Ingrese rut sin puntos ni guión"
+                                size="12" maxlength="12" minlength="7" onkeyup="formatClienteResultados(this)" onkeypress="return solonumeros(event)" onpaste = "return false" >
                             </div>
                             <div>
                                 <button class="btn_postula" >CONSULTAR</button>

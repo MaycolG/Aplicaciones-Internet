@@ -87,6 +87,16 @@ function formatCliente(rut)
     rut.value=rut.value.replace(/[.-]/g, '')
     .replace( /^(\d{1,2})(\d{3})(\d{3})(\w{1})$/, '$1.$2.$3-$4')
 }
+function formatClienteResultados(txt_rut)
+{
+    txt_rut.value=txt_rut.value.replace(/[.-]/g, '')
+    .replace( /^(\d{1,2})(\d{3})(\d{3})(\w{1})$/, '$1.$2.$3-$4')
+}
+function formatCuenta(numero_cuenta)
+{
+    numero_cuenta.value=numero_cuenta.value.replace(/[.-]/g, '')
+    .replace( /^(\d{1,2})(\d{3})(\d{3})$/, '$1.$2.$3')
+}
 
 // function validarEmail(email) {
 //     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email)){

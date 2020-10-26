@@ -22,8 +22,8 @@
             <nav class="encabezado">
                 <ol>
                     <li> <img src="img/logo.png" class="logo"></li>
-                    <li> <a href="#Inicio" class="nav_link"> Inicio</a></li>
-                    <li> <a href="#Descripcion" class="nav_link">Descripción</a></li>
+                    <li> <a href="#encabezado_imagen" class="nav_link"> Inicio</a></li>
+                    <li> <a href="#container descripcion" class="nav_link">Descripción</a></li>
                     <li> <a href="#postulacion" class="nav_link">Trabaja con nostros</a></li>
                     <li> <a href="#resultado" class="nav_link">Resultado</a></li>
                     <li> <a href="#Contacto" class="nav_link">Contacto</a></li>
@@ -51,7 +51,8 @@
                             <div class="row form-group">
                                 <label for="direccion" class="col-form-label col-sm-2 col-md-2 col-lg-2">Dirección:</label>
                                 <div class=" col-sm-10 col-md-10 col-lg-10">
-                                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese su dirección">
+                                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese su dirección" 
+                                    size="40" maxlength="40" minlength="20" onpaste = "return false">
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -68,7 +69,8 @@
                             <div class="row form-group">
                                 <label for="fecha_ingreso" class="col-form-label col-sm-2 col-md-2 col-lg-2">Fecha Ingreso:</label>
                                 <div class=" col-sm-10 col-md-10 col-lg-10">
-                                    <input type="date" name="fecha_ingreso" id="fecha_ingreso" class="form-control" >
+                                    <input type="date" name="fecha_ingreso" id="fecha_ingreso" class="form-control"
+                                    style="cursor: grab;" >
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -141,7 +143,8 @@
                                 <div class="row form-group">
                                     <label for="numero_cuenta" class="col-form-label col-sm-2 col-md-2 col-lg-2">Numero de cuenta:</label>
                                     <div class=" col-sm-10 col-md-10 col-lg-10">
-                                        <input type="text" name="numero_cuenta" id="numero_cuenta" class="form-control" placeholder="Ingrese el numero de cuenta">
+                                        <input type="text" name="numero_cuenta" id="numero_cuenta" class="form-control" placeholder="Ingrese el numero de cuenta"
+                                        size="10" maxlength="10" onkeyup="formatCuenta(this)" onkeypress="return solonumeros(event)" onpaste = "return false" >
                                     </div>
                                 </div>
                             </form>
@@ -185,7 +188,9 @@
                                 <div class="row form-group">
                                     <label for="talla_calzado" class="col-form-label col-sm-2 col-md-2 col-lg-2">Talla calzado:</label>
                                     <div class=" col-sm-10 col-md-10 col-lg-10">
-                                        <input type="text" name="talla_calzado" id="talla_calzado" class="form-control" >
+                                        <input type="text" name="talla_calzado" id="talla_calzado" class="form-control"
+                                        onkeypress="return solonumeros(event)" onpaste = "return false" 
+                                        pattern= "[0-9]{1}[0-9]{1}" size="2" maxlength="2" minlength="2">
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -231,7 +236,7 @@
                             <form>
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Certificado antecdentes</label>
+                                    <label class="custom-control-label" for="customRadioInline1">Certificado antecedentes</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
