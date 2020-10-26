@@ -6,6 +6,7 @@ function enter_submit(e)
   	document.frm.submit();
   } 
 } 
+
 	
 function enter_tab(obj, e)
  {
@@ -42,7 +43,6 @@ function enter_tab(obj, e)
     }
     return true;
 }
-
 function solonumeros(e)
 {
 	key=e.keyCode || e.which;
@@ -63,45 +63,32 @@ function solonumeros(e)
 	}
 }	
 
-function sololetras(e)
-{
-	key = e.keyCode || e.which;
-	tecla = String.fromCharCode(key).toString();
-	letras = " abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZáéíóúÁÉÍÓÚ@";//Se define todo el abecedario que se quiere que se muestre.
-	especiales="8-37-38-46-6"; //array	
-	tecla_especial = false
-	for(var i in especiales) {
-	    if(key == especiales[i]) {
-	        tecla_especial = true;
-	        break;
-	    }
-	}
-	if(letras.indexOf(tecla) == -1 && !tecla_especial)
-	{
-	    return false;
+var Fn = {
+	// Valida el rut con su cadena completa "XXXXXXXX-X"
+	validaRut : function (rutCompleto) {
+		rutCompleto = rutCompleto.replace("‐","-");
+		if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test( rutCompleto ))
+			return false;
+		var tmp 	= rutCompleto.split('-');
+		var digv	= tmp[1]; 
+		var rut 	= tmp[0];
+		if ( digv == 'K' ) digv = 'k' ;
+		
+		return (Fn.dv(rut) == digv );
+	},
+	dv : function(T){
+		var M=0,S=1;
+		for(;T;T=Math.floor(T/10))
+			S=(S+T%10*(9-M++%6))%11;
+		return S?S-1:'k';
 	}
 }
 
-function formatCliente(rut)
-{
-    rut.value=rut.value.replace(/[.-]/g, '')
-    .replace( /^(\d{1,2})(\d{3})(\d{3})(\w{1})$/, '$1.$2.$3-$4')
-}
-function formatClienteResultados(txt_rut)
-{
-    txt_rut.value=txt_rut.value.replace(/[.-]/g, '')
-    .replace( /^(\d{1,2})(\d{3})(\d{3})(\w{1})$/, '$1.$2.$3-$4')
-}
-function formatCuenta(numero_cuenta)
-{
-    numero_cuenta.value=numero_cuenta.value.replace(/[.-]/g, '')
-    .replace( /^(\d{1,2})(\d{3})(\d{3})$/, '$1.$2.$3')
-}
 
-// function validarEmail(email) {
-//     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email)){
-//      alert("La dirección de email " + email + " es correcta.");
-//     } else {
-//      alert("La dirección de email es incorrecta.");
-//     }
-//   }
+$("#btnvalida").click(function(){
+	if (Fn.validaRut( $("#txt_rut").val() )){
+		$("#msgerror").html("El rut ingresado es válido :D");
+	} else {
+		$("#msgerror").html("El Rut no es válido :'( ");
+	}
+});

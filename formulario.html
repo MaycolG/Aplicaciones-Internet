@@ -23,8 +23,8 @@
         <nav class="encabezado">
             <ol>
                 <li> <img src="img/logo.png" class="logo"></li>
-                <li> <a href="#Inicio" class="nav_link"> Inicio</a></li>
-                <li> <a href="#Descripcion" class="nav_link">Descripción</a></li>
+                <li> <a href="#encabezado_imagen" class="nav_link"> Inicio</a></li>
+                <li> <a href="#container descripcion" class="nav_link">Descripción</a></li>
                 <li> <a href="#postulacion" class="nav_link">Trabaja con nostros</a></li>
                 <li> <a href="#resultado" class="nav_link">Resultado</a></li>
                 <li> <a href="#Contacto" class="nav_link">Contacto</a></li>
@@ -51,49 +51,55 @@
                                         <div class="row form-group">
                                             <label for="rut" class="col-form-label col-md-12">Rut:</label>
                                             <div class="col-md-12">
-                                                <input type="text" name="rut" id="rut" class="form-control" placeholder="Ingrese rut sin guion ni digito verificador">
+                                                <input type="text" name="rut" required id="rut" class="form-control" placeholder="Ingrese rut sin puntos ni guión"
+                                                size="12" maxlength="12" minlength="7" onkeyup="formatCliente(this)" onkeypress="return solonumeros(event)" onpaste = "return false" >
                                             </div>
                                         </div>
                                         <div class="row form-group">
                                             <label for="nombre" class="col-form-label col-md-12">Nombre:</label>
                                             <div class="col-md-12">
-                                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese ambos nombres">
+                                                <input type="text" name="nombre" required id="nombre" class="form-control" placeholder="Ingrese ambos nombres"
+                                                size="30" maxlength="30" minlength="15" onkeypress="return sololetras(event)" onpaste = "return false">
                                             </div>
                                         </div>
                                         <div class="row form-group">
                                             <label for="apellido_p" class="col-form-label col-md-12">Apellido paterno:</label>
                                             <div class="col-md-12">
-                                                <input type="text" name="apellido_p" id="nombre_p" class="form-control" placeholder="Ingrese apellido paterno">
+                                                <input type="text" name="apellido_p" required id="nombre_p" class="form-control" placeholder="Ingrese apellido paterno"
+                                                size="25" maxlength="25" minlength="15" onkeypress="return sololetras(event)" onpaste = "return false">
                                             </div>
                                         </div>
                                         <div class="row form-group">
                                             <label for="apellido_m" class="col-form-label col-md-12">Apellido materno:</label>
                                             <div class="col-md-12">
-                                                <input type="text" name="apellido_m" id="nombre_m" class="form-control" placeholder="Ingrese apellido materno">
+                                                <input type="text" name="apellido_m" required id="nombre_m" class="form-control" placeholder="Ingrese apellido materno"
+                                                size="25" maxlength="25" minlength="15" onkeypress="return sololetras(event)" onpaste = "return false">
                                             </div>
                                         </div>
                                         <div class="row form-group">
                                             <label for="fecha_n" class="col-form-label col-md-12">Fecha de nacimiento:</label>
                                             <div class="col-md-12">
-                                                <input type="date" name="fecha_n" id="fecha_n" class="form-control">
+                                                <input type="date" name="fecha_n" required id="fecha_n" class="form-control" style="cursor: grab;">
                                             </div>
                                         </div>
                                         <div class="row form-group">
                                             <label for="email" class="col-form-label col-md-12">Correo electronico:</label>
                                             <div class="col-md-12">
-                                                <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese correo electronico">
+                                                <input type="email" name="email" required id="email" class="form-control" placeholder="Ingrese correo electronico"
+                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" maxlength="30" minlength="20" onpaste = "return false">
                                             </div>
                                         </div>
                                         <div class="row form-group">
                                             <label for="telefono" class="col-form-label col-md-12">Telefono:</label>
                                             <div class="col-md-12">
-                                                <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Ingrese numero de telefono">
+                                                <input type="tel" name="telefono" required id="telefono" class="form-control" placeholder="Ingrese numero de telefono, comenzando con 9"
+                                                pattern= "[9]{1}[0-9]{9}" size="8" maxlength="8" minlength="8" onkeypress="return solonumeros(event)" onpaste = "return false">
                                             </div>
                                         </div>
                                         <div class="row form-group">
                                             <label for="cargo" class="col-form-label col-md-12">Cargo:</label>
                                             <div class="col-md-12">
-                                                <select name="estado civil" class="form-control" name="cargo" id="cargo">
+                                                <select name="estado civil" class="form-control" name="cargo" required id="cargo">
                                                     <option value="soltero/a">Soltero/a</option>
                                                     <option value="casado/a">Casado/a</option>
                                                     <option value="vuido/a">Viudo/a</option>
