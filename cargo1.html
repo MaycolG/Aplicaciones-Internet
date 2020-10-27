@@ -38,87 +38,87 @@
                         <h1>Ingrese los siguientes datos:</h1>
                         <hr>
                         <br>
-                        <p>Por favor ingresar los siguientes datos requeridos para postular al cargo de bla bla</p>
+                        <!-- <p>Por favor ingresar los siguientes datos requeridos para postular al cargo de bla bla</p> -->
                     </div>
                 </div>
-                <section class="secion_borde">
                     <br>
-                    <div class="row justify-content-center">
-                        <div class="col-md-10">
-                            <h4>Informacion personal:</h4>
-                            <br>
-                          <form> 
-                            <div class="row form-group">
-                                <label for="direccion" class="col-form-label col-sm-2 col-md-2 col-lg-2">Dirección:</label>
-                                <div class=" col-sm-10 col-md-10 col-lg-10">
-                                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese su dirección" 
-                                    size="40" maxlength="40" minlength="20" onpaste = "return false">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label for="comuna" class="col-form-label col-sm-2 col-md-2 col-lg-2">Comuna:</label>
-                                <div class="col-sm-10 col-md-10 col-lg-10">
-                                    <select name="comuna" class="form-control" name="comuna" id="comuna">
-                                        <option value="Coquimbo">Coquimbo</option>
-                                        <option value="La Serena">La Serena</option>
-                                        <option value="Vicuña">Vicuña</option>
-                                        <option value="Ovalle">Ovalle</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label for="fecha_ingreso" class="col-form-label col-sm-2 col-md-2 col-lg-2">Fecha Ingreso:</label>
-                                <div class=" col-sm-10 col-md-10 col-lg-10">
-                                    <input type="date" name="fecha_ingreso" id="fecha_ingreso" class="form-control"
-                                    style="cursor: grab;" >
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label for="nacionalidad" class="col-form-label col-sm-2 col-md-2 col-lg-2">Nacionalidad:</label>
-                                <div class="col-sm-10 col-md-10 col-lg-10">
-                                    <select name="nacionalidad" class="form-control" name="nacionalidad" id="nacionalidad">
-                                        <option value="Chilena">Chilena</option>
-                                        <option value="Argentina">Argentina</option>
-                                        <option value="Vicuña">Vicuña</option>
-                                        <option value="Ovalle">Ovalle</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label for="genero" class="col-form-label col-sm-2 col-md-2 col-lg-2">Genero:</label>
-                                <div class="col-sm-10 col-md-10 col-lg-10">
-                                    <select name="genero" class="form-control" name="genero" id="genero">
-                                        <option value="masculino">Masculino</option>
-                                        <option value="femenino">Femenino</option>
-                                        <option value="aun no lo se">Aun no lo se</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label for="estado_civil" class="col-form-label col-sm-2 col-md-2 col-lg-2">Estado civil:</label>
-                                <div class="col-sm-10 col-md-10 col-lg-10">
-                                    <select name="estado_civil" class="form-control" name="estado_civil" id="estado_civil">
-                                        <option value="casado">Casado/a</option>
-                                        <option value="soltero">Soltero/a</option>
-                                        <option value="viudo">Viudo/a</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <br>
-                          </form>
-                        </div>
-                    </div>
-                </section>
-                <hr>
-                <br>
-                <p>Ingresar datos asociados a su cuenta de banco</p>
-                <section class="secion_borde">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center secion_borde">
                         <div class="col-md-10">
                             <br>
-                            <h4>Datos bancarios:</h4>
-                            <br>
-                            <form>
+                            <form> 
+                                <h4>Informacion personal:</h4>
+                                <p>Por favor ingresar los siguientes datos requeridos para postular al cargo de bla bla</p>
+                                <br>
+                                <div class="row form-group">
+                                    <label for="rut" class="col-form-label col-sm-2 col-md-2 col-lg-2">Rut:</label>
+                                    <div class="col-sm-10 col-md-10 col-lg-10">
+                                        <input type="text" name="rut" required id="rut" class="form-control" placeholder="Ingrese rut sin puntos ni guión"
+                                        size="12" maxlength="12" minlength="7" onkeyup="formatCliente(this)" onkeypress="return solonumeros(event)" onpaste = "return false" >
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="direccion" class="col-form-label col-sm-2 col-md-2 col-lg-2">Dirección:</label>
+                                    <div class=" col-sm-10 col-md-10 col-lg-10">
+                                        <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese su dirección" 
+                                        size="40" maxlength="40" minlength="20" onpaste = "return false">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="comuna" class="col-form-label col-sm-2 col-md-2 col-lg-2">Comuna:</label>
+                                    <div class="col-sm-10 col-md-10 col-lg-10">
+                                        <select name="comuna" class="form-control" name="comuna" id="comuna">
+                                            <option value="Coquimbo">Coquimbo</option>
+                                            <option value="La Serena">La Serena</option>
+                                            <option value="Vicuña">Vicuña</option>
+                                            <option value="Ovalle">Ovalle</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="fecha_ingreso" class="col-form-label col-sm-2 col-md-2 col-lg-2">Fecha Ingreso:</label>
+                                    <div class=" col-sm-10 col-md-10 col-lg-10">
+                                        <input type="date" name="fecha_ingreso" id="fecha_ingreso" class="form-control"
+                                        style="cursor: grab;" >
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="nacionalidad" class="col-form-label col-sm-2 col-md-2 col-lg-2">Nacionalidad:</label>
+                                    <div class="col-sm-10 col-md-10 col-lg-10">
+                                        <select name="nacionalidad" class="form-control" name="nacionalidad" id="nacionalidad">
+                                            <option value="Chilena">Chilena</option>
+                                            <option value="Argentina">Argentina</option>
+                                            <option value="Vicuña">Vicuña</option>
+                                            <option value="Ovalle">Ovalle</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="genero" class="col-form-label col-sm-2 col-md-2 col-lg-2">Genero:</label>
+                                    <div class="col-sm-10 col-md-10 col-lg-10">
+                                        <select name="genero" class="form-control" name="genero" id="genero">
+                                            <option value="masculino">Masculino</option>
+                                            <option value="femenino">Femenino</option>
+                                            <option value="aun no lo se">Aun no lo se</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="estado_civil" class="col-form-label col-sm-2 col-md-2 col-lg-2">Estado civil:</label>
+                                    <div class="col-sm-10 col-md-10 col-lg-10">
+                                        <select name="estado_civil" class="form-control" name="estado_civil" id="estado_civil">
+                                            <option value="casado">Casado/a</option>
+                                            <option value="soltero">Soltero/a</option>
+                                            <option value="viudo">Viudo/a</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h4>Datos bancarios</h4>
+                                <p>Ingresar datos asociados a su cuenta de banco</p>
+                                <br>
+                                <!-- mdfjgnfdgjn -->
                                 <div class="row form-group">
                                     <label for="banco" class="col-form-label col-sm-2 col-md-2 col-lg-2">Banco:</label>
                                     <div class="col-sm-10 col-md-10 col-lg-10">
@@ -147,21 +147,11 @@
                                         size="10" maxlength="10" onkeyup="formatCuenta(this)" onkeypress="return solonumeros(event)" onpaste = "return false" >
                                     </div>
                                 </div>
-                            </form>
-                            <br>
-                        </div>
-                    </div>
-                </section>
-                <hr>
-                <br>
-                <p>Ingresar datos asociados a salud, como tipo de prevision medica, medidas fisicas</p>
-                <section class="secion_borde">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10">
-                        <br>
-                        <h4>Salud:</h4>
-                        <br>
-                            <form>
+                                <hr>
+                                <h4>Salud:</h4>
+                                <p>Ingresar datos asociados a salud, como tipo de prevision medica, medidas fisicas</p>
+                                <br>
+                                <!--  -->
                                 <div class="row form-group">
                                     <label for="salud" class="col-form-label col-sm-2 col-md-2 col-lg-2">Salud:</label>
                                     <div class="col-sm-10 col-md-10 col-lg-10">
@@ -204,85 +194,62 @@
                                         </select>
                                     </div>
                                 </div>
-                            </form>
-                            <br>
-                        </div>
-                    </div>
-                </section>
-                <hr>
-                <br>
-                <p>Ingresar informacion acerca de certificados, examenes etc.</p>
-                <section class="secion_borde">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10">
-                            <br>
-                            <h4>Certificados:</h4>
-                            <br>
-                            <form>
+                                <hr>
+                                <h4>Certificados:</h4>
+                                <p>Ingresar informacion acerca de certificados, examenes etc.</p>
+                                <br>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="c-antecedentes" name="customRadioInline1" class="custom-control-input">
+                                    <input type="checkbox" id="c-antecedentes" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="c-antecedentes">Certificado antecdentes</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="c_cargas_familiares" name="customRadioInline1" class="custom-control-input">
+                                    <input type="checkbox" id="c_cargas_familiares" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="c_cargas_familiares">Certificado cargas familiares</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="c_afp" name="customRadioInline1" class="custom-control-input">
+                                    <input type="checkbox" id="c_afp" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="c_afp">Certificado Afp</label>
                                 </div>
-                            </form>
-                            <br>
-                            <form>
+                                <hr>
+                                <h4>Documentos:</h4>
+                                <p>Ingresar informacion acerca de certificados, examenes etc.</p>
+                                <br>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Certificado antecedentes</label>
+                                    <input type="checkbox" id="copia_rut" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="copia_rut">Copia rut</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Certificado cargas familiares</label>
+                                    <input type="checkbox" id="curriculum" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="curriculum">Curriculum vitae</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Certificado Afp</label>
+                                    <input type="checkbox" id="finiquito" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="finiquito">Ultimo finiquito</label>
                                 </div>
-                            </form>
-                            <br>
-                            <form>
+                                <hr>   
+                                <h4>Examenes:</h4>
+                                <p>Ingresar informacion acerca de certificados, examenes etc.</p>
+                                <br>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="c_covid" name="customRadioInline1" class="custom-control-input">
+                                    <input type="checkbox" id="c_covid" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="c_covid">Certificado COVID-19    </label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="c_psicologico" name="customRadioInline1" class="custom-control-input">
+                                    <input type="checkbox" id="c_psicologico" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="c_psicologico">Certificado psicologico</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="c_salud_general" name="customRadioInline1" class="custom-control-input">
+                                    <input type="checkbox" id="c_salud_general" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="c_salud_general">Certificado salud general</label>
                                 </div>
-                            </form>
-                            <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <button class="btn_siguiente" >ENVIAR</button>
+                          </form>
                         </div>
                     </div>
-                </section>
-                <hr>
-                <br>
-                <p>Ingresar datos especificos a cerca del cargo</p>
-                <section class="secion_borde">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10">
-                            <br>
-                            <h4>Cargo especifico:</h4>
-                            <br>
-                            <form>
-                                <p>aqui van</p>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-                <br>
-                <button class="btn_siguiente" >ENVIAR</button>
         </section>
         <br>
         <footer id="Contacto">
